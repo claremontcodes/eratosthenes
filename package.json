@@ -1,0 +1,25 @@
+{
+  "name": "introcs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "cover": "NODE_ENV=test nyc --reporter=html --reporter=text-summary mocha",
+    "test": "npm run cover && node bin/eratosthenes.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "4.3.10",
+    "eslint": "8.55.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.1.1",
+    "mocha": "10.2.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43"
+  }
+}
