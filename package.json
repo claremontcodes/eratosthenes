@@ -17,9 +17,5 @@
     "eslint-plugin-promise": "6.1.1",
     "mocha": "10.2.0",
     "nyc": "^15.1.0"
-  },
-  "dependencies": {
-    "moment": "^2.29.4",
-    "moment-timezone": "^0.5.43"
   }
 }
