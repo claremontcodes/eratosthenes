@@ -76,9 +76,9 @@ take input values and transform them into one output value.
 
 The inputs to a function are called parameters or arguments. The output is
 called the return value. (You'll see why in a moment.) To write a function in
-JavaScript you use the special form `function` followed by
+JavaScript you use the special keyword `function` followed by
 
-1. the name of your function (which you get to choose!)
+1. the name of your function, which you get to choose!
 2. an open parenthesis `(`
 3. a list of input parameters separated by commas
 4. a closed parenthesis `)`
@@ -109,7 +109,7 @@ function take three inputs called `red`, `green`, and `blue`.
 Now we put the calculation in the body of our function and return the calculated
 value. Here's one way we could write our function:
 
-```
+```js
 function luminance(red, green, blue) {
   return (0.2126 * red + 0.7152 * green + 0.0722 * blue);
 }
@@ -118,7 +118,7 @@ function luminance(red, green, blue) {
 Here's another way we could have written it. It does exactly the same thing as
 the function above.
 
-```
+```js
 function luminance(r, g, b) {
   return (0.2126 * r + 0.7152 * g + 0.0722 * b);
 }
@@ -129,12 +129,15 @@ prefer? Which one is more understandable?
 
 Here's one more way. This version creates two new values `temp` and `final`
 inside the function using the special keyword `const` and the assignment
-operator `=`. The `=` pairs the name on the left-hand side (like, `temp`) with the value on the right-hand side.
+operator `=`. It is not the equals sign and does not denote equality. The 
+`=` pairs the name on the left-hand side (like, `temp`) with the value on
+the right-hand side.
 
 The output of this version of `luminance()` is the same as the other two, but
-the calculation is split up into two separate steps. The result of the first step is used in the second step.
+the calculation is split up into two separate steps. The result of the first
+step is used in the second step.
 
-```
+```js
 function luminance(red, green, blue) {
   const temp = 0.0722 * blue + 0.2126 * green;
   const final = temp + 0.2126 * red;
