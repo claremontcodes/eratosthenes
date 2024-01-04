@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "cover": "NODE_ENV=test nyc --reporter=html --reporter=text-summary mocha",
+    "cover": "nyc --reporter=html --reporter=text-summary mocha",
     "test": "npm run cover && node bin/eratosthenes.js"
   },
   "author": "",
