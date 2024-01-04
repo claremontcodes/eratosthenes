@@ -119,17 +119,17 @@ Here's another way we could have written it. It does exactly the same thing as
 the function above.
 
 ```js
-function luminance(r, g, b) {
-  return (0.2126 * r + 0.7152 * g + 0.0722 * b);
+function luminance(x, y, z) {
+  return (0.2126 * x + 0.7152 * y + 0.0722 * z);
 }
 ```
 
 What differences do you notice between the two versions? Which one do you
 prefer? Which one is more understandable?
 
-Here's one more way. This version creates two new values `temp` and `final`
-inside the function using the special keyword `const` and the assignment
-operator `=`. It is not the equals sign and does not denote equality. The 
+Let's look at one more way. This version creates two new values `temp` and
+`final` inside the function using the special keyword `const` and the assignment
+operator `=`. It is not the equals sign and does not denote equality. The
 `=` pairs the name on the left-hand side (like, `temp`) with the value on
 the right-hand side.
 
